@@ -1,0 +1,4 @@
+{
+    "DATA_ROOT": "./datasets/",
+    "DETECTION_ROOT": "./detections/",
+}
