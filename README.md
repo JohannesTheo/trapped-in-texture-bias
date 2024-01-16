@@ -27,13 +27,13 @@ Diff to arXiv: Updated related work and discussion, additional ablation: removin
 The code release consists of three parts:
 
 1. An object-centric version of Stylized COCO
-2. Detection and evaluation code for 61 models covering *Cascade* and *Mask R-CNN*, *Swin Transformer*, *BMask*, *YOLACT(++)*, *DETR*, *BCNet*, *SOTR* and *SOLOv2*.
+2. Detection and evaluation code for 68 models covering *Cascade* and *Mask R-CNN*, *Swin Transformer*, *BMask*, *YOLACT(++)*, *DETR*, *BCNet*, *SOTR* and *SOLOv2*.
 3. Data analysis and visualization (to reproduce results and figures)
 
 ### Directory structure
 
 - `./datasets` - Stylized COCO will be created in this directory and the detection code assumes it to be there (configurable in `path_config.json`).
-- `./detections` - Detection and evaluation files will be saved in this directory (configurable in `path_config.json`). NOTE: running 61 models on 60 copies of COCO val2017 will result in ~1TB of uncompressed data. If you are interested in custom evaluation and additional analysis please reach out to us.
+- `./detections` - Detection and evaluation files will be saved in this directory (configurable in `path_config.json`). NOTE: running 68 models on 61 copies of COCO val2017 will result in ~1TB of uncompressed data. If you are interested in custom evaluation and additional analysis please reach out to us.
 - `./plots` - Figures from the analysis will be saved here.
 - `./ext` - A central point to install detection frameworks and other required dependencies (we will release detailed installation instructions over the next weeks).
 - `./src` - Source code to create datasets, run detections, evaluation, analysis and visualization.
