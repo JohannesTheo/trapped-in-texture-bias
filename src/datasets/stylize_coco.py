@@ -1,7 +1,6 @@
 """
 This script creates stylized versions of COCO using
-https://github.com/bethgelab/stylize-datasets
-which is included as a git submodule.
+https://github.com/JohannesTheo/stylize-datasets
 """
 
 import os
@@ -92,7 +91,7 @@ if __name__ == '__main__':
   # stylize coco
   os.chdir(STYLIZE_CODE)
 
-  for style_num in range(1,11):
+  for style_num in [1]:
     OUT_PATH = STYLIZED_COCO_PATH / str(style_num) / "feature_space"
     CONTENT_STYLE_MAP = DATA_ROOT / "coco_style_maps" / f"coco_style_map_{style_num}.json"
 

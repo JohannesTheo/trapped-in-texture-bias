@@ -121,7 +121,7 @@ if __name__ == '__main__':
   COCO_IMG    = COCO_PATH / "val2017"
   ANNOTATIONS = COCO_PATH / "annotations/instances_val2017.json"
   
-  for style_num in range(1,11):
+  for style_num in [1]:
     STYLIZED_COCO_PATH       = DATA_ROOT / "stylized_coco" / str(style_num)
     STYLIZED_COCO_OBJECTS    = DATA_ROOT / "stylized_coco_objects" / str(style_num)
     STYLIZED_COCO_BACKGROUND = DATA_ROOT / "stylized_coco_background" / str(style_num)

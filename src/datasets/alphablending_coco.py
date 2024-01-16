@@ -53,7 +53,7 @@ if __name__ == '__main__':
     DATA_ROOT = (ROOT / DATA_ROOT).resolve()
 
   COCO_PATH          = DATA_ROOT / "coco" / "val2017"
-  for style_num in range(1,11):
+  for style_num in [1]:
     STYLIZED_COCO_PATH = DATA_ROOT / "stylized_coco" / str(style_num) / "feature_space" / "1.0"
     OUTPUT_PATH        = DATA_ROOT / "stylized_coco" / str(style_num) / "pixel_space"
     ALPHA_VALUES = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9] # 0 = original coco images, 1.0 = fully stylized coco images
