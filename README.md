@@ -7,7 +7,9 @@ This is the official code release for the paper *Trapped in texture bias? A larg
 - **Paper**: [https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136680597.pdf](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136680597.pdf)
 - **Supplementary material**: [https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136680597-supp.pdf](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136680597-supp.pdf)
 
-If you find our study useful or when using the object-centric datasets, please consider citing as follows:
+Diff to arXiv: Updated related work and discussion, additional ablation: removing object contour.
+
+**If you find our study useful or when using the object-centric datasets, please consider citing as follows:**
 
 ```bibtex
 @inproceedings{theodoridis2022texturebias,
@@ -38,7 +40,7 @@ The code release consists of three parts:
 
 ## 1. An object-centric version of Stylized COCO
 
-> **You can download Stylized COCO (●), Stylized Objects (▲) and Stylized Background (■) as used in the study from [here]().**
+> **You can download Stylized COCO (●), Stylized Objects (▲) and Stylized Background (■) as used in the study from [here](https://drive.google.com/drive/folders/1NNX8oaxr--PUUYdH7pfJiNwkQ9zGkY0E).**
 
 Every dataset version contains 20 accordingly styled copies of the COCO val2017 subset (11 blending steps in feature space + 9 in pixel space). Note that pixel space blending step 0.0 is the original COCO val2017 subset and not included. Pixel space blending step 1.0 is equivalent to feature space 1.0 and therefore, not included either (would be a doubling of data). For convenience, we added annotations/instances_val2017.json to every dataset version (it's just a copy of original COCO annotations).
 
